@@ -1,1 +1,45 @@
+body {
+    max-width: 800px;
+    margin: 24px auto;
+    background-image: url('https://lh3.googleusercontent.com/uy4-RzsSGCT7eXAT2Mlcc1MkYDP-IjwQKUsixbzGPNfU6ivzHPHo4989ZNBVuvkOg-M=w2400');
 
+}
+main{
+    background-color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+/*wrap around element*/
+img{
+    float: left;
+    
+}
+div img{
+    padding-right: 15px;
+}
+
+header > nav {
+    float: right;
+}
+article{
+    float: left;
+    max-width: 600px;
+}
+/*clear fix*/
+main::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+main aside a {
+    display: block;
+}
+main > aside {
+    float: right;
+}
+/*I'm having trouble figuring out how a background image works and how to create that box of color around the content*/
+footer{
+    text-align: center;
+    margin: 50px 0 30px;
+}
+/*Now I'm having trouble spacing my text from my images that doesn't change the padding on all my images.*/
